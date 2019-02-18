@@ -6,4 +6,4 @@ before_install:
   - docker build -t eeokee/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run eeokee/docker-react npm run test -- --coverage
+  - docker run eeokee/docker-react yarn run test --coverage
